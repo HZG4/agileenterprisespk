@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Agile Enterprises</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/icon.png" rel="icon">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- products -->
+  
+  <!-- =======================================================
+  * Template Name: Append
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <!-- Nav Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav><!-- End Nav Menu -->
+
+    
+
+    </div>
+  </header><!-- End Header -->
+
+
+<!-- slider -->
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+<script>
+          var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"Whatsapp Us","cornerRadius":40,"marginBottom":70,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"923009696640","welcomeMessage":"Hello!","zIndex":999999,"btnColorScheme":"light"};
+          var wa_widgetSetting = {"title":"Agile Enterprises","subTitle":"We will reply within a day","headerBackgroundColor":"#2ced65","headerColorScheme":"dark","greetingText":"Hi there! \nHow can I help you?","ctaText":"Start Chat","btnColor":"#f36633","cornerRadius":60,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"assets/img/logo.png","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};  
+          window.onload = () => {
+            _waEmbed(wa_btnSetting, wa_widgetSetting);
+          };
+        </script>
+
+<section id="home"> 
+  <!-- Images from Unsplash -->
+<div class="slider-container">
+<div class="container" >
+<h1 data-aos="fade-right" data-aos-delay="100">Welcome to Agile Enterprises</h1>
+<p data-aos="fade-right" data-aos-delay="100">The reliable ally for all your medical needs.</p>
+<a href="#about" class="btn-get-started" data-aos="fade-up" data-aos-delay="100">Read More</a>
+</div>
+
+<div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)),url('assets/img/slide11.png')"></div>
+
+<div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url('assets/img/slide12.png')"></div>
+
+<div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.25)), url('assets/img/slide13.png')"></div>
+
+<div class="controls-container">
+  <div class="control"></div>
+  <div class="control"></div>
+  <div class="control"></div>
+</div>
+</div>
+</section>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const controls = document.querySelectorAll('.control');
+let activeSlide = 0;
+let prevActive = 0;
+
+changeSlides();
+let int = setInterval(changeSlides, 4000);
+
+function changeSlides() {
+slides[prevActive].classList.remove('active');
+controls[prevActive].classList.remove('active');
+
+slides[activeSlide].classList.add('active');
+controls[activeSlide].classList.add('active');
+
+prevActive = activeSlide++;
+
+if(activeSlide >= slides.length) {
+  activeSlide = 0;
+}
+
+console.log(prevActive, activeSlide);
+}
+
+controls.forEach(control => {
+control.addEventListener('click', () => {
+  let idx = [...controls].findIndex(c => c === control);
+  activeSlide = idx;
+
+  changeSlides();
+
+  clearInterval(int);
+  int = setInterval(changeSlides, 4000);
+});
+});
+</script>
+
+
+
+<!-- ======= Call To Action Section ======= -->
+<section id="about" >
+
+  <div class="container" data-aos="fade-up">
+     <h1>About Us</h1>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+
+
+<section id="call-in-action">
+  <div class="container" data-aos="fade-up">
+     <h1>COMPANY OVERVIEW</h1>
+     <strong>
+     <p>Agile Enterprises is a premier business active in the field of<br>
+      Dialysis Disposable,Medical Devices, dialysis Sol, <br>Disinfectant Solutions,and Govt.Tenders since 2021.
+      </p></strong>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+<section id="call-in-action">
+  <div class="container" data-aos="fade-up">
+     <h1>OUR VISION</h1>
+     <strong>
+     <p>To deliver the best possible customer service, excellent quality <br>and
+      the most products. We want to become a first choice to our key<br> customers by providing them with the best
+      products and a <br>professional service.
+      
+      </p></strong>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+<section id="call-in-action">
+  <div class="container" data-aos="fade-up">
+     <h1>MISSION STATEMENT</h1>
+     <strong>
+     <p >Serve our customer with competitive prices and best solution for their requirements. Expansion in the field 
+      of Cardiac & Cardiothoracic Disposable products, medical equipment supplies and Launching of Heparin from Europe 
+      and develop a base of key customers. 
+      </p></strong>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+<section id="call-in-action">
+  <div class="container" data-aos="fade-up">
+     <h1 >CORE VALUES & STRENGTHS</h1>
+     <strong>
+     <p >Our value guide us to do the “right thing with transparency and Integrity” and to deliver 
+      the promises that we make. We aim to build on the traditional values of trustworthiness 
+      and to build strong partnerships with our customers and strategic partners. 
+      We believe in treating our customer with respect and faith.
+      </p></strong>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+<section id="call-in-action">
+  <div class="container" data-aos="fade-up">
+     <h1 >OUR EXPERTISE</h1>
+     <strong>
+     <p >We maintain the highest levels of expertise in Distribution, Tendering and trading of 
+      high quality Medical products which enable us to deliver on our values. Our team members
+       are professional and highly skilled in their areas to meet the customer’s demands and building services.
+
+
+      </p></strong>
+    
+  </div>
+
+</section><!-- End Call To Action Section -->
+
+<!-- partners -->
+
+<section id="services" class="services">
+  <div class="container" data-aos="fade-up">
+<section id="call-in-action">
+    <div class="container">
+      <h2>Our Services</h2>
+      
+    </div>
+  </section>
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="service-item">
+          <div class="img">
+            <img src="assets/img/slide1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="details position-relative">
+            
+            <a href="#" class="stretched-link">
+              <h3>Dialysis Disposables</h3>
+            </a>
+            <p >Discover excellence in dialysis disposables
+               with our advanced product range. Elevate patient care, safety, and operational efficiency. 
+               Partner with us to enhance your professional image and provide unmatched value to your clients.
+                Contact us for transformative collaboration.</p>
+         
+          <a href="#partners" class="btn-get-started" data-aos="fade-up" data-aos-delay="100">Read More</a>
+        </div>
+      </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="service-item">
+          <div class="img">
+            <img src="assets/img/slide2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="details position-relative">
+            
+            <a href="#" class="stretched-link">
+              <h3>Medicine</h3>
+            </a>
+            <p >Empower your practice with our innovative medical solutions. As a trusted distributor, we provide a diverse range of 
+              cutting-edge pharmaceuticals and healthcare products. Elevate patient care with our reliable supply and redefine 
+              medicine's future through our partnership.
+            </p>
+          
+            <a href="#partners" class="btn-get-started" data-aos="fade-up" data-aos-delay="100">Read More</a>
+        </div>
+      </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="service-item">
+          <div class="img">
+            <img src="assets/img/slide3.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="details position-relative">
+            
+            <a href="#" class="stretched-link">
+              <h3>Surgical Devices</h3>
+            </a>
+            <p >Elevate your surgical practice with our top-tier disposables, designed for precision, safety, and superior outcomes. As your trusted partner, 
+              we offer a diverse range adhering to the highest industry standards. Redefine excellence in surgery with our premium disposables.</p>
+            <a href="#partners" class="btn-get-started" data-aos="fade-up" data-aos-delay="100">Read More</a>
+          </div>
+          
+        </div>
+      </div><!-- End Service Item -->
+
+
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+ <!-- ======= Clients Section ======= -->
+ <section id="partners" class="clients section-bg">
+  <div class="container" data-aos="fade-up">
+    <section id="call-in-action">
+    <div class="container">
+      <h2>Partners</h2>
+    </div>
+    <p>Meet Our Privileged Confideration</p>
+      
+  </section>
+    <!-- <div class="section-title">
+      <h2>Partners</h2>
+      <p>They Trusted Us</p>
+    </div> -->
+
+    <div class="clients" data-aos="fade-up" data-aos-delay="100" >
+      <div class="images d-flex justify-content-center">
+      <a  class="sizee"> <img src="assets/img/clients/client-1.png"  alt="" class="sizee" ></a>
+        <a class="sizee"><img src="assets/img/clients/client-2.png"   alt="" class="sizee"></a>
+        <a class="sizee"><img src="assets/img/clients/client.png"   alt="" class="sizee"></a>
+        <a  class="sizee"> <img src="assets/img/clients/client-4.png"  alt="" class="sizee" ></a>
+        <a  class="size"> <img src="assets/img/clients/client-3.png"  alt="" class="size" ></a>
+        
+       
+      </div>
+    
+    </div>
+
+  </div>
+</section><!-- End Clients Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <section id="call-in-action">
+        <div class="container">
+          <h2>Contact Us</h2>
+          
+        </div>
+      </section>
+
+      <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="col-lg-5">
+          <div class="info">
+          
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>agileenterprisespk@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+923009696640</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+         
+          <form action="https://formsubmit.co/agileenterprisespk@gmail.com" method="Post" data-aos="fade-left" data-aos-delay="100" >
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
+            </div>
+          <div class="text-center">
+            <button type="submit" class="btn-get-started "data-aos="fade-left" data-aos-delay="100">Send Message</button>
+          </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Agile Enterprises</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a>HM services</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  
+  
+
+  <!-- Scroll Top Button -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
